@@ -5,7 +5,7 @@ function whisper(string) {
   return string.toLowerCase ()
 }
 function logShout(string) {
-    console.log; string.toHaveBeenCalledWith
+    console.log; spy.toHaveBeenCalledWith
 }
 
 describe('logWhisper(string)', function() {
