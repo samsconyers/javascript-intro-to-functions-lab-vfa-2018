@@ -4,7 +4,7 @@ function shout(string) {
 function whisper(string) {
   return string.toLowerCase ()
 }
-function logShout(string) {
+describe('logShout(string)', function logShout(string) {
   it('calls console.log() its one argument in all caps', function() {
     const spy = expect.spyOn(console, 'log').andCallThrough()
 
@@ -12,7 +12,7 @@ function logShout(string) {
 
     expect(spy).toHaveBeenCalledWith('HELLO')
 
-    console.log ()
+    console.log.restore()
   })
 })
 
