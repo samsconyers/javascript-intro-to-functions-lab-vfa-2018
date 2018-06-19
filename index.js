@@ -13,11 +13,10 @@ function logWhisper(string) {
 function sayHiToGrandma(string) {
   if (string.toLowerCase() == string) {
     return "I can\'t hear you!"}
-  else if 
-  }
-  it('returns "I can\'t hear you!" if `string` is lowercase', function() {
-    expect(sayHiToGrandma('hello')).toEqual("I can't hear you!")
-  })
+    else if (string.toUpperCase() == string) {
+      return "YES INDEED!" }
+      if 
+    }
 
   it('returns "YES INDEED!" if `string` is uppercase', function() {
     expect(sayHiToGrandma('HELLO')).toEqual("YES INDEED!")
