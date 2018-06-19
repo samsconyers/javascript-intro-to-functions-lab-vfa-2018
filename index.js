@@ -6,7 +6,6 @@ function whisper(string) {
 }
 function logShout(string) {
     console.log; string.toHaveBeenCalledWith
-    console.log.restore()
 }
 
 describe('logWhisper(string)', function() {
