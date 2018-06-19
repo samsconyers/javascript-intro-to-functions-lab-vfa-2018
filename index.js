@@ -11,7 +11,7 @@ function logShout(string) {
 
     expect(spy).toHaveBeenCalledWith('HELLO')
 
-    console.log ()
+    console.log(spy)
   })
 })
 
