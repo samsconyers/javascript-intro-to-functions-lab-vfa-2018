@@ -6,7 +6,7 @@ function whisper(string) {
 }
 function logShout(string) {
   it('calls console.log() its one argument in all caps', function() {
-    const spy = expect.spyOn(console, 'log').andCallThrough()
+    console.log spy = expect.spyOn(console, 'log').andCallThrough()
 
     logShout('hello')
 
