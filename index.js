@@ -5,13 +5,13 @@ function whisper(string) {
   return string.toLowerCase ()
 }
 function logShout(string) {
-  spy = expect.spyOn(console, 'log').andCallThrough()
+  return string.toHaveBeenCalledWith spy = expect.spyOn(console, 'log').andCallThrough()
 
     logShout('hello')
 
     expect(spy).toHaveBeenCalledWith('HELLO')
 
-    console.log.restore()
+    console.log ()
   })
 })
 
