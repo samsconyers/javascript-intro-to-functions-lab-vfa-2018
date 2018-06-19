@@ -5,14 +5,9 @@ function whisper(string) {
   return string.toLowerCase ()
 }
 function logShout(string) {
-  it('calls console.log() its one argument in all caps', function() {
-    console.log spy = expect.spyOn(console, 'log').andCallThrough()
-
-    logShout('hello')
-
-    expect(spy).toHaveBeenCalledWith('HELLO')
-
+    console.log; string.toHaveBeenCalledWith
     console.log.restore()
+}
 
 describe('logWhisper(string)', function() {
   it('calls console.log() its one argument in all lowercase', function() {
